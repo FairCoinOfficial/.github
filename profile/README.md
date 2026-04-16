@@ -1,33 +1,104 @@
-# FairCoin - Decentralized Cryptocurrency for Social and Economic Justice 💰🌟
+<p align="center">
+  <a href="https://fairco.in">
+    <img src="https://avatars.githubusercontent.com/u/102275008?s=200&v=4" alt="FairCoin" width="120" />
+  </a>
+</p>
 
-FairCoin is a decentralized cryptocurrency that was created with the goal of promoting social and economic justice. The project began in 2014 and was launched with the principle of fair distribution of resources and decision-making power.
+<h1 align="center">FairCoin</h1>
 
-## Mission and Values 🎯💡
+<p align="center">
+  A decentralized cryptocurrency with <b>Masternodes</b>, <b>Coin Mixing</b>, and a <b>PoW/PoS hybrid</b> consensus.
+  <br />
+  Built for social and economic justice since 2014.
+</p>
 
-At FairCoin, we believe that economic systems should be transparent, democratic, and equitable. Our mission is to create a fairer and more sustainable world by promoting social and economic justice.
+<p align="center">
+  <a href="https://fairco.in">Website</a> ·
+  <a href="https://academy.fairco.in">Academy</a> ·
+  <a href="https://github.com/FairCoinOfficial/FairCoin/releases">Downloads</a> ·
+  <a href="https://t.me/FairCoinOfficial">Telegram</a> ·
+  <a href="https://twitter.com/FairCoin_">Twitter</a>
+</p>
 
-We believe that everyone should have access to the resources they need to thrive, and that decision-making power should be distributed equally. We also believe that economic systems should be based on cooperation and mutual support, rather than competition and exploitation.
+---
 
-## Features 🚀💡🔋
+## What is FairCoin?
 
-FairCoin has a number of features that make it unique among cryptocurrencies:
+FairCoin (ticker **FAIR**) is an open-source cryptocurrency focused on fair distribution, privacy, and low-energy consensus. The project is community-led, fully open-source, and maintained under this organization.
 
-- **Decentralized Exchange:** FairCoin is traded on a number of decentralized exchanges (DEXs), which ensure that the currency can be bought and sold without the need for a centralized exchange.
-- **Low Energy Consumption:** The PoC consensus mechanism used by FairCoin is much more energy-efficient than the PoW mechanism used by many other cryptocurrencies. This means that the environmental impact of FairCoin is much lower than that of other cryptocurrencies.
+| | |
+|---|---|
+| **Ticker** | FAIR |
+| **Algorithm** | Quark |
+| **Consensus** | PoW + PoS hybrid |
+| **Block time** | 120 s |
+| **Max supply** | 33,000,000 FAIR |
+| **Masternode collateral** | 5,000 FAIR |
+| **Address prefix** | `F` (mainnet) / `T` (testnet) |
 
-## Community and Development 👥🌱
+Full spec, block rewards, and network ports: see [FairCoin Core README](https://github.com/FairCoinOfficial/FairCoin#coin-specifications).
 
-The FairCoin community is made up of people from all over the world who are committed to promoting social and economic justice. The project is community-led, with decisions made through a decentralized governance model.
+---
 
-FairCoin is an open-source project, and anyone can contribute to its development. The project is maintained by a team of dedicated developers who are committed to improving the currency and making it more accessible to people around the world.
+## Ecosystem
 
-## Get Involved 🤝
+### Protocol
+| Repo | Description | Stack |
+|---|---|---|
+| [**FairCoin**](https://github.com/FairCoinOfficial/FairCoin) | Reference node & wallet (`faircoind`, `faircoin-qt`, `faircoin-cli`) | C++ |
+| [**faircoin-seeder**](https://github.com/FairCoinOfficial/faircoin-seeder) | DNS seeder powering `seed1.fairco.in` / `seed2.fairco.in` | C++ |
 
-If you are interested in learning more about FairCoin, or would like to get involved in the community, here are some resources to check out:
+### Run a node
+| Repo | Description | Stack |
+|---|---|---|
+| [**FAIRNode**](https://github.com/FairCoinOfficial/FAIRNode) | Docker image for a full node (Debian 12, minimal) | Docker |
+| [**FAIRNodeDesktop**](https://github.com/FairCoinOfficial/FAIRNodeDesktop) | Cross-platform desktop node with GUI | Electron + Vite + React |
 
-- [FairCoin Website](https://fairco.in/) 🌍
-- [FairCoin Academy](https://academy.fairco.in/) 📚
-- [FairCoin on Telegram](https://t.me/FairCoinOfficial) 💬
-- [FairCoin on Twitter](https://twitter.com/FairCoin_) 🐦
+### Wallets
+| Repo | Description | Stack |
+|---|---|---|
+| [**FAIRWallet**](https://github.com/FairCoinOfficial/FAIRWallet) | SPV wallet for Android, iOS, Windows, macOS, Linux — HD, BIP39/32/44, FastSend, masternodes, BIP38 | Expo 55 / React Native 0.83 / TypeScript |
 
-We look forward to hearing from you and welcome your participation in the FairCoin community!
+### Services & tools
+| Repo | Description | Stack |
+|---|---|---|
+| [**Explorer**](https://github.com/FairCoinOfficial/Explorer) | Public block explorer with MongoDB caching | Next.js 14 + Tailwind |
+| [**FairRPCAPIServer**](https://github.com/FairCoinOfficial/FairRPCAPIServer) | REST API layer over FairCoin JSON-RPC | Node.js + Express |
+| [**faircoin-web-proxy**](https://github.com/FairCoinOfficial/faircoin-web-proxy) | Lightweight web proxy for RPC endpoints | JavaScript |
+
+---
+
+## Get started
+
+**Users** → download a wallet from [FAIRWallet releases](https://github.com/FairCoinOfficial/FAIRWallet/releases) or the [FairCoin Core releases](https://github.com/FairCoinOfficial/FairCoin/releases).
+
+**Node operators** → run [FAIRNode](https://github.com/FairCoinOfficial/FAIRNode) (Docker) or [FAIRNodeDesktop](https://github.com/FairCoinOfficial/FAIRNodeDesktop) (GUI). Masternodes require 5,000 FAIR collateral — see [FairCoin Core docs](https://github.com/FairCoinOfficial/FairCoin/tree/main/doc).
+
+**Developers** → integrate via [FairRPCAPIServer](https://github.com/FairCoinOfficial/FairRPCAPIServer) or query the [Explorer](https://github.com/FairCoinOfficial/Explorer) directly. Report issues in the relevant repo.
+
+**Learners** → visit [FairCoin Academy](https://academy.fairco.in).
+
+---
+
+## Contributing
+
+All repos are open to contributions. Before opening a PR:
+
+1. Check existing issues and discussions on the target repo.
+2. Follow the repo's contribution guide and code style.
+3. Sign your commits where applicable.
+4. For protocol-level changes to [FairCoin](https://github.com/FairCoinOfficial/FairCoin), open a discussion first.
+
+Security issues: email **team@fairco.in** — do not open public issues for vulnerabilities.
+
+---
+
+## Community
+
+- **Website** — <https://fairco.in>
+- **Academy** — <https://academy.fairco.in>
+- **Telegram** — <https://t.me/FairCoinOfficial>
+- **Twitter / X** — [@FairCoin_](https://twitter.com/FairCoin_)
+- **Email** — team@fairco.in
+
+<p align="center"><sub>FairCoin is free software released under the MIT License. Use at your own risk.</sub></p>
