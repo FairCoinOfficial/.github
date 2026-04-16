@@ -67,6 +67,11 @@ Published to npm under the [`@fairco.in`](https://www.npmjs.com/org/fairco.in) s
 | [**faircoin-core**](https://github.com/FairCoinOfficial/faircoin-core) | [`@fairco.in/core`](https://www.npmjs.com/package/@fairco.in/core) | Protocol primitives — BIP32/39/44 HD wallets, tx build/sign, P2PKH, Quark, BIP38, BIP21. Zero React Native deps. |
 | [**faircoin-rpc-client**](https://github.com/FairCoinOfficial/faircoin-rpc-client) | [`@fairco.in/rpc-client`](https://www.npmjs.com/package/@fairco.in/rpc-client) | Zero-dependency JSON-RPC client for `faircoind`. Node 20+. |
 
+### Bridges
+| Repo | Description | Stack |
+|---|---|---|
+| [**faircoin-bridge**](https://github.com/FairCoinOfficial/faircoin-bridge) | **WFAIR** — custodial 1:1 bridge from FAIR to Base (Ethereum L2). ERC-20 + Safe multisig + TVL cap. *Experimental, unaudited.* | Foundry + Bun + viem |
+
 ### Services & tools
 | Repo | Description | Stack |
 |---|---|---|
