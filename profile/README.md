@@ -59,6 +59,14 @@ Full spec, block rewards, and network ports: see [FairCoin Core README](https://
 |---|---|---|
 | [**FAIRWallet**](https://github.com/FairCoinOfficial/FAIRWallet) | SPV wallet for Android, iOS, Windows, macOS, Linux — HD, BIP39/32/44, FastSend, masternodes, BIP38 | Expo 55 / React Native 0.83 / TypeScript |
 
+### Libraries (TypeScript SDK)
+Published to npm under the [`@fairco.in`](https://www.npmjs.com/org/fairco.in) scope.
+
+| Repo | Package | Description |
+|---|---|---|
+| [**faircoin-core**](https://github.com/FairCoinOfficial/faircoin-core) | [`@fairco.in/core`](https://www.npmjs.com/package/@fairco.in/core) | Protocol primitives — BIP32/39/44 HD wallets, tx build/sign, P2PKH, Quark, BIP38, BIP21. Zero React Native deps. |
+| [**faircoin-rpc-client**](https://github.com/FairCoinOfficial/faircoin-rpc-client) | [`@fairco.in/rpc-client`](https://www.npmjs.com/package/@fairco.in/rpc-client) | Zero-dependency JSON-RPC client for `faircoind`. Node 20+. |
+
 ### Services & tools
 | Repo | Description | Stack |
 |---|---|---|
@@ -74,7 +82,11 @@ Full spec, block rewards, and network ports: see [FairCoin Core README](https://
 
 **Node operators** → run [FAIRNode](https://github.com/FairCoinOfficial/FAIRNode) (Docker) or [FAIRNodeDesktop](https://github.com/FairCoinOfficial/FAIRNodeDesktop) (GUI). Masternodes require 5,000 FAIR collateral — see [FairCoin Core docs](https://github.com/FairCoinOfficial/FairCoin/tree/main/doc).
 
-**Developers** → integrate via [FairRPCAPIServer](https://github.com/FairCoinOfficial/FairRPCAPIServer) or query the [Explorer](https://github.com/FairCoinOfficial/Explorer) directly. Report issues in the relevant repo.
+**Developers** → build on FairCoin with the TypeScript SDK:
+```sh
+bun add @fairco.in/core @fairco.in/rpc-client
+```
+Or integrate via [FairRPCAPIServer](https://github.com/FairCoinOfficial/FairRPCAPIServer) / query the [Explorer](https://github.com/FairCoinOfficial/Explorer) directly. Report issues in the relevant repo.
 
 **Learners** → visit [FairCoin Academy](https://academy.fairco.in).
 
